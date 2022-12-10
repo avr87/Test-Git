@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>SheCodesPluswk2</title>
+    <link href="style.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        class="card app"
+        style="
+          width: 800px;
+          height: 600px;
+          border-radius: 10rem 7rem 10rem 7rem;
+          display: block;
+          margin-top: 20px;
+          padding: 20px;
+          background: radial-gradient(
+            circle at 10% 20%,
+            rgba(234, 249, 249, 0.67) 0.1%,
+            rgba(239, 249, 251, 0.63) 90.1%
+          );
+        "
+      >
+        <div class="card-body">
+          <div class="container px-4 text-center" >
+            <div class="weather">
+            
+              <span class="card-title degrees col-6" id="currentTemp"
+                >🌤 21˚C</span
+              >
+              
+                  
+
+            <form class="search" id="search-form" name="search-form">
+              <input
+                autocomplete="off"
+                autofocus="on"
+                id="input-location"
+                placeholder="Enter location..."
+                type="text"
+              />
+              <input id="find" type="submit" value="🔍" />
+            </form>
+             <button type="button" class="btn btn-link button" id="local-weather">Show local weather</button>
+
+           <br />
+            <br />
+            <br />
+            <br />
+            <p class="card-subtitle text-muted city" id="cities" width="300px" height="75px">
+              
+              London
+            </p>
+            <br />
+            
+
+            <div class="bg-light time col-6" id="currentTime">
+              Sunday: 13:54
+            </div>
+            <div class="description" id="inwords">Sun with partial cloud</div>
+          </div>
+
+          <div class="row">
+            <p><br /></p>
+
+            <div class="card-text day col-2">Mon</div>
+
+            <div class="card-text day col-2">Tue</div>
+
+            <div class="card-text day col-2">Wed</div>
+
+            <div class="card-text day col-2">Thur</div>
+
+            <div class="card-text day col-2">Fri</div>
+
+            <p></p>
+
+            <p></p>
+
+            <div class="card-text temp col-2">19˚</div>
+
+            <div class="card-text temp col-2">20˚</div>
+
+            <div class="card-text temp col-2">18˚</div>
+
+            <div class="card-text temp col-2">17˚</div>
+
+            <div class="card-text temp col-2">21˚</div>
+
+            <p></p>
+
+            <p></p>
+
+            <div class="card-text emoji col-2">
+              <span class="border border-primary rounded-circle">⛅️</span>
+            </div>
+
+            <div class="card-text emoji col-2">
+              <span class="border border-primary rounded-circle">☀️</span>
+            </div>
+
+            <div class="card-text emoji col-2">
+              <span class="border border-primary rounded-circle">🌩</span>
+            </div>
+
+            <div class="card-text emoji col-2">
+              <span class="border border-primary rounded-circle">🌧</span>
+            </div>
+
+            <div class="card-text emoji col-2">
+              <span class="border border-primary rounded-circle">🌤</span>
+            </div>
+
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
